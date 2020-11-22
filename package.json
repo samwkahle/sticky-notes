@@ -19,7 +19,7 @@
   "bugs": {
     "url": "https://github.com/jazibsawar/sticky-notes/issues"
   },
-  "homepage": "https://github.com/jazibsawar/sticky-notes#readme",
+  "homepage": "https://gratitudewall.bpbuild.com",
   "dependencies": {
     "async": "^2.5.0",
     "babel": "^6.23.0",
