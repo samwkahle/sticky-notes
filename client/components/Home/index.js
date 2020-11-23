@@ -19,7 +19,22 @@ class Home extends Component {
     }
   }
 
+  //   sendemail = async () => {
+  //   const mailRes = await transport.sendMail({
+  //     from: 'samwkahle@gmail.com',
+  //     to: 'sam@blueprintinteractive.com',
+  //     subject: 'A new note has been added!',
+  //     html: makeANiceEmail(`To view the new note,
+  //     \n\n
+  //     <a href="##">Click Here</a>`),
+  //   });
+  //   return { message: 'Thanks!' };
+  // };
+
+
   addGroup = () => {
+
+    // sendemail();
     const { title, content, color } = this.state;
     this.props.addGroup({
       title,
@@ -77,10 +92,10 @@ class Home extends Component {
       >
         <div className="container-fluid">
           <div className="col-xs-12">
-            <input placeholder="Enter Name ..." type="text" style={{ margin: "1vh 0" }} value={title} className="form-control" onChange={(e) => this.setState({ title: e.target.value })} />
+            <input placeholder="Who is this note for..." type="text" style={{ margin: "1vh 0" }} value={title} className="form-control" onChange={(e) => this.setState({ title: e.target.value })} />
           </div>
           <div className="col-xs-12">
-            <textarea value={content} placeholder="Enter Description ..." rows="4" cols="50" style={{ margin: "1vh 0" }} className="form-control" onChange={(e) => this.setState({ content: e.target.value })} />
+            <textarea value={content} placeholder="Why is this person awesome..." rows="4" cols="50" style={{ margin: "1vh 0" }} className="form-control" onChange={(e) => this.setState({ content: e.target.value })} />
           </div>
           <div className="col-xs-12">
             <ColorPicker color={color} changeColor={(color) => this.setState({ color: color.hex })} />

@@ -16,8 +16,9 @@ export const NoteListWrapper = styled.ul`
 
 export const NoteWrapper = styled.li`
   margin: 40px;
-  float: left;
+  float: none;
   list-style: none;
+  display: inline-block;
   @media (max-width: 620px) {
     margin: 40px 4%;
     float: none;

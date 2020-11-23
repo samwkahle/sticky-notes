@@ -9,10 +9,13 @@ class ColorPickerField extends Component {
 
   render() {
     return (
+      <div>
+      <p>Pick the color of your note:</p>
       <ChromePicker
         color={this.props.color||"#000"}
         onChangeComplete={this.props.changeColor}
       />
+      </div>
     )
   }
 }

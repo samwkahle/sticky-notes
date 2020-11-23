@@ -10,15 +10,7 @@
     "build-dev": "webpack -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jazibsawar/sticky-notes.git"
-  },
-  "author": "Muhammad Musa",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jazibsawar/sticky-notes/issues"
-  },
+
   "homepage": "https://gratitudewall.bpbuild.com",
   "dependencies": {
     "async": "^2.5.0",

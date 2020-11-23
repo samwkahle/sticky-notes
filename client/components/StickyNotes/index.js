@@ -7,9 +7,15 @@ class StickyNotes extends Component {
   render() {
     const { options, labelWhenEmpty } = this.props;
 
+    // function shuffle(array) {
+    //   array.sort(() => Math.random() - 0.5);
+    // }
+
     return (
       <NoteListWrapper>
         {
+
+
           !!options && options.toArray().reverse().map((option, index) => {
           return  <NoteWrapper key={`note_${index}`}>
               <Note backgroundColor={option.getIn(['metadata', 'color'])||"black"} color="#ffffff" rotate={index%2 === 0? -2 : 4}>
